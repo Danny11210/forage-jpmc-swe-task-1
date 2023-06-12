@@ -1,0 +1,24 @@
+From ff3efa27f3f2e38069bcca2c6792f545d9432917 Mon Sep 17 00:00:00 2001
+From: Debjit Das <debjit.das01@gmail.com>
+Date: Mon, 12 Jun 2023 14:46:27 +0530
+Subject: [PATCH] yes
+
+---
+ client3.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/client3.py b/client3.py
+index a50f994..f06db19 100644
+--- a/client3.py
++++ b/client3.py
+@@ -58,6 +58,7 @@ if __name__ == "__main__":
+         for quote in quotes:
+             stock, bid_price, ask_price, price = getDataPoint(quote)
+             prices[stock] = price
++            
+             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+ 
+         print("Ratio %s" % getRatio(prices["ABC"], prices["DEF"]))
+-- 
+2.35.1.windows.2
+
